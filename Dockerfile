@@ -1,6 +1,7 @@
+FROM base
+
 MAINTAINER riywo "https://github.com/riywo"
 
-FROM base
 RUN echo "deb http://packages.treasure-data.com/precise/ precise contrib" > /etc/apt/sources.list.d/treasure-data.list
 RUN apt-get update
 RUN apt-get install -y --force-yes td-agent
