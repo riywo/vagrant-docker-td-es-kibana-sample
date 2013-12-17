@@ -7,4 +7,4 @@ vagrant, docker, td-agent, elasticsearch, kibana
 
     $ vagrant up
     $ open http://localhost:5555
-    $ cat '{"data": 1}' | fluent-cat
+    $ echo '{"data": 1}' | fluent-cat foo
